@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const useStyles = (theme) => ({
   root: {
@@ -8,6 +8,7 @@ const useStyles = (theme) => ({
     margin: 0
   },
   link: {
+    maxWidth: 250,
     margin: 5,
     paddingLeft: 10,
     paddingRight: 10,
@@ -15,7 +16,9 @@ const useStyles = (theme) => ({
     paddingBottom: 3,
     borderRadius: 20,
     fontSize: 15,
-    display: 'inline-block'
+    display: 'inline-block',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden'
   },
   svg: {
     width: '32px',
@@ -24,46 +27,46 @@ const useStyles = (theme) => ({
     fill: theme.value.contrast
   },
   anchor: {
-    marginLeft: '5px',
+    marginLeft: '5px'
   }
-})
+});
 
-const Basic = (
-  {
-    theme,
-    headlineText,
-    links
-  }
-) => {
-  const styles = useStyles(theme)
+const Basic = ({ theme, headlineText, links }) => {
+  const styles = useStyles(theme);
   return (
     <div style={styles.root}>
-      <h1 style={styles.headlineText} >{headlineText.value}</h1>
+      <h1 style={styles.headlineText}>{headlineText.value}</h1>
       <hr />
       <br />
       <div>
-        {
-          links.value.map((link) => {
-            return <div key={link.value}
+        {links.value.map((link) => {
+          return (
+            <div
+              key={link.value}
               style={{
                 ...styles.link,
                 backgroundColor: theme.value.color,
                 color: theme.value.contrast
-              }} >
-              <svg viewBox={link.viewBox} style={{...styles.svg}}>
-                {
-                  link.platform.map(path => (
-                    <path key={path} d={path} />
-                  ))
-                }
+              }}
+            >
+              <svg viewBox={link.viewBox} style={{ ...styles.svg }}>
+                {link.platform.map((path) => (
+                  <path key={path} d={path} />
+                ))}
               </svg>
-              <a style={{ ...styles.anchor, color: theme.value.contrast }} href={link.value} rel="noreferrer" target="_blank">{link.value}</a>
+              <a
+                style={{ ...styles.anchor, color: theme.value.contrast }}
+                href={link.value}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {link.value}
+              </a>
             </div>
-          })
-        }
+          );
+        })}
       </div>
-
-    </div >
+    </div>
   );
 };
 
