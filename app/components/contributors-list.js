@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
   contributorPaper: {
     userSelect: 'none',
-    marginLeft: 300,
+    // marginLeft: 300,
     marginBottom: 100,
     transition: 'all .2s linear',
   },
