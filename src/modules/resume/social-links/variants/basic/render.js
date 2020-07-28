@@ -28,6 +28,11 @@ const useStyles = (theme) => ({
   },
   cursorPointer: {
     cursor: 'pointer'
+  },
+  mobileView: {
+    display: 'flex',
+    flex: '0 0 auto',
+    justifyContent: 'space-evenly'
   }
 });
 
@@ -38,7 +43,7 @@ const Basic = ({ theme, headlineText, links, formFactor }) => {
       <h1 style={styles.headlineText}>{headlineText.value}</h1>
       <hr />
       <br />
-      <div>
+      <div style={formFactor !== 'desktop' ? { ...styles.mobileView } : {}}>
         {links.value.map((link) => {
           return (
             <div
