@@ -29,7 +29,7 @@ I would like to thank you for **volunteering** to contribute as an **Open Source
 
 I also want to express my gratitude for considering this as an opportunity. I promise it will be an interesting journey. Let us all learn from each other during the process because the greatest strength of software developers is the community.
 
-Please make sure you respect other developers in th group. Learning is a 2-way process. Review other's code and provide review comments on the [pull requests](https://github.com/ManojSatishkumar/msk-components/pulls). If you find issues / bugs, log it [here](https://github.com/ManojSatishkumar/msk-components/issues).
+Please make sure you respect other developers in the group. Learning is a 2-way process. Review other's code and provide review comments on the [pull requests](https://github.com/ManojSatishkumar/msk-components/pulls). If you find issues / bugs, log it [here](https://github.com/ManojSatishkumar/msk-components/issues).
 
 That being said, I will be onboarding you to this project.
 
@@ -123,14 +123,14 @@ run `npm start`. This will open the application on http://localhost:6501/
 
 There is a folder called **[sample](https://github.com/ManojSatishkumar/msk-components/tree/master/src/modules/resume/sample)** inside the **[resume](https://github.com/ManojSatishkumar/msk-components/tree/master/src/modules/resume)** module. Go ahead and check all the files inside. There is a detailed documentation at the beginning of each file. This should give you enough explanation about the file and certain rules and best practices to be followed.
 
-Once you are familiar with the sample component, go ahead and add your own components and variants. Reserch online and identify different components inside vaarious documents.
+Once you are familiar with the sample component, go ahead and add your own components and variants. Research online and identify different components inside vaarious documents.
 
-#### Step 6 : Sumbit your pull request
+#### Step 6 : Submit your pull request
 
 After finishing your code, you are ready to contribute. Go ahead and make a commit and push the changes to your fork branch. Then submit a pull request to msk-components/master.
 
 ###### ✅ Pull request rules:
-- Add atleast 5 reviwers in the PR
+- Add atleast 5 reviewers in the PR
 - Always submit a PR from a named branch from your fork
 - Attach Desktop & Mobile screenshots to the PR
 - Choose the label in the PR ( bug / enhancement / maintenance etc., ) 
@@ -146,6 +146,8 @@ Assign few contributors as reviewers and get your code reviewed. You will need a
 ### Not sure what to contribute ?
 
 Check the **[issues](https://github.com/ManojSatishkumar/msk-components/issues)** section where you will find new ideas / challenges / bugs. You can pick one by adding a comment to the thread that you will be working on it. ( This will avoid duplicate work )
+
+**Please close the issue when your corresponding pull request gets merged.**
 
 ---
 
