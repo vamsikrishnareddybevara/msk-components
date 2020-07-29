@@ -8,6 +8,7 @@ const useStyles = (theme) => ({
     margin: 0
   },
   link: {
+    maxWidth: 300,
     margin: 5,
     paddingLeft: 10,
     paddingRight: 10,
@@ -15,7 +16,9 @@ const useStyles = (theme) => ({
     paddingBottom: 3,
     borderRadius: 20,
     fontSize: 15,
-    display: 'inline-block'
+    display: 'inline-flex',
+    alignItems: 'center',
+    flex: '0 0 auto'
   },
   svg: {
     width: '32px',
