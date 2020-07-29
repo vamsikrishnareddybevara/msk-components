@@ -8,7 +8,7 @@ const useStyles = (theme) => ({
     margin: 0
   },
   link: {
-    maxWidth: 250,
+    maxWidth: 300,
     margin: 5,
     paddingLeft: 10,
     paddingRight: 10,
